@@ -78,7 +78,7 @@ body{
 
 .text_box{
     position:absolute;
-    top: 50%; 
+    top: 45%; 
     left: 50%; 
     transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
     z-index: 1; /* Ensure the text is above the video */
@@ -86,7 +86,7 @@ body{
     color: #fff; 
     padding: 20px; 
     width: 100%;
-    font-size: 7vw; 
+    font-size: 5vw; 
     text-align: center; 
     mix-blend-mode:multiply;
 }
@@ -180,4 +180,353 @@ body{
     width: 50%;
     color: #fff;
 }
+
+/*
+Here starts the login page
+*/
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+.login_display{
+    min-height: 100vh;
+    width: 80%;
+    align-items:flex-start;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.login_view{
+    display: grid;
+    height: 70vh;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    'login signin';
+}
+
+
+.login{
+    grid-area: login;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign_in{
+    grid-area: signin;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field{
+    width: 60%;
+    outline: 0;
+    border: 0;
+    position: relative;
+    margin-top: 50px;
+    border-bottom: 2px solid gray;
+    padding: 10px 0;
+    background: transparent;
+    font-size: 1em;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.email-label{
+    display: block;
+    position: absolute;
+    font-size: 1em;
+    color: gray;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.input-field::placeholder{
+    color: transparent;
+}
+
+.input-field:placeholder-shown + .email-label{
+    display: block;
+    font-size: 1em;
+    top: 150px;
+}
+
+.input-field:focus{
+    border-image-slice: 1;
+}
+
+.input-field:valid + .email-label,
+.input-field:focus + .email-label{
+    display: block;
+    position: absolute;
+    top: 130px;
+    font-size: 0.75em;
+}
+
+/*Password*/
+
+.password-label{
+    display: block;
+    position: absolute;
+    font-size: 1em;
+    color: gray;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.input-field:placeholder-shown + .password-label{
+    display: block;
+    font-size: 1em;
+    top: 240px;
+}
+
+.input-field:valid + .password-label,
+.input-field:focus + .password-label{
+    display: block;
+    position: absolute;
+    top: 220px;
+    font-size: 0.75em;
+}
+
+/*
+Button
+*/
+
+.login_button{
+    width: 310px;
+    height: 35px;
+    position: relative;
+    top: 3.5rem;
+    background: transparent;
+    border: 2px solid gray; /* Set border style to solid and specify a single color */
+    color: white;
+    border-radius: 20px;
+}
+
+.login_button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: 0.4s ease;
+}
+
+.forgot_button{
+    width: 310px;
+    height: 35px;
+    position: relative;
+    top: 4rem;
+    background: transparent;
+    text-align: left;
+    border: none; 
+    color: white;
+}
+
+.button_text {
+    display: inline-block;
+    border-bottom: 2px solid transparent; /* Add bottom border to the text */
+}
+
+.button_text:hover {
+    border-bottom-color: gray; /* Change bottom border color on hover */
+    cursor: pointer;
+}
+
+/*Sign in*/
+
+.subscribe_button{
+    position: relative;
+    top: 40px;
+    width: 350px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid gray;
+    color: white;
+    border-radius: 20px;
+}
+
+.subscribe_button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: 0.4s ease;
+}
+
+/*CARDS CONTAINER*/
+
+.card_wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card{
+    display: grid;
+    grid-template-rows: 85% 25% ;
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+}
+
+.card button{
+    width: 300px;
+    height: 60px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid gray;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.card button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.card1{
+    background-image: url(/img/card1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card2{
+    background-image: url(/img/card2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card3{
+    background-image: url(/img/card3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card-overlay{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); 
+    z-index: 1; 
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+
+.card-overlay ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+.card-overlay ul li {
+    text-align: center; 
+    margin-bottom: 10px; 
+}
+
+/*Media stuff*/
+
+/*Subscruption page*/
+
+@media (max-width: 40em) {
+
+    .card_wrapper{
+        width: 100%;
+        height: calc(100vh - 60px);
+        overflow-y:scroll;
+    }
+
+    .card{
+        display: grid;
+        grid-template-rows: 85% 25% ;
+        width: 300px;
+        height: 450px;
+        border: none;
+        color: #fff;
+    }
+    
+    .card button{
+        width: 300px;
+        height: 60px;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid gray;
+    }
+}
+
+/*Login page*/
+
+@media (max-width: 40em) {
+    .login_view{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .login{
+        grid-area: login;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .sign_in{
+        grid-area: signin;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .forgot_button{
+        width: 310px;
+        height: 35px;
+        position: relative;
+        top: 4rem;
+        background: transparent;
+        text-align: center;
+        border: none; 
+        color: white;
+    }
+    
+}
+
+
+
+
 

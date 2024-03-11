@@ -3,14 +3,14 @@ let themeIndex = 1;
 
 // List of themes
 const themes = [
-    { textColor: 'rgba(0, 0, 0, 0.8)', linkColor: '#304D2E', logoColor: '#304D2E', textBackground: 'white', bgColor: 'black', videoSrc: '/img/THE_RING_CURSED_VIDEO_TAPE_VHS_Original_High_Quality_FU_uvZrA5w7f9E.mp4' },
-    { textColor: 'rgba(0, 0, 0, 0.8)', linkColor: '#E1D4C0', logoColor: '#E1D4C0', textBackground: 'white', bgColor: 'black', videoSrc: '/img/Akira_1988_Trailer_nA8KmHC2Z-g_137.mp4' },
-    { textColor: ' rgba(0, 0, 0, 0.8)', linkColor: '#E1D4C0', logoColor: '#E1D4C0', textBackground: 'white', bgColor: 'black', videoSrc: '/img/Everything_Everywhere_All_At_Once_Official_Trailer_HD_A_wxN1T1uxQ2g.mp4' },
-    { textColor: ' rgba(0, 0, 0, 0.8)', linkColor: '#E1D4C0', logoColor: '#E1D4C0', textBackground: 'white', bgColor: 'black', videoSrc: '/img/Mandarines.mp4' },
-    { textColor: ' rgba(0, 0, 0, 0.8)', linkColor: '#E1D4C0', logoColor: '#E1D4C0', textBackground: 'white', bgColor: 'black', videoSrc: '/img/Muhammed.mp4' },
-    { textColor: ' rgba(0, 0, 0, 0.8)', linkColor: '#E1D4C0', logoColor: '#E1D4C0', textBackground: 'white', bgColor: 'black', videoSrc: '/img/Oldboy.mp4' },
-    { textColor: ' rgba(0, 0, 0, 0.8)', linkColor: '#E1D4C0', logoColor: '#E1D4C0', textBackground: 'white', bgColor: 'black', videoSrc: '/img/Sputnik.mp4' },
-    { textColor: ' rgba(0, 0, 0, 0.8)', linkColor: '#E1D4C0', logoColor: '#E1D4C0', textBackground: 'white', bgColor: 'black', videoSrc: '/img/Capernaum.mp4' },
+    { textColor: 'rgba(0, 0, 0, 1)', linkColor: '#304D2E', logoColor: '#304D2E', textBackground: 'white', bgColor: 'black', videoSrc: '/img/THE_RING_CURSED_VIDEO_TAPE_VHS_Original_High_Quality_FU_uvZrA5w7f9E.mp4' },
+    { textColor: 'rgba(0, 0, 0, 1)', linkColor: '#E1D4C0', logoColor: '#E1D4C0', textBackground: 'white', bgColor: 'black', videoSrc: '/img/Akira_1988_Trailer_nA8KmHC2Z-g_137.mp4' },
+    { textColor: ' rgba(0, 0, 0, 1)', linkColor: '#E1D4C0', logoColor: '#E1D4C0', textBackground: 'white', bgColor: 'black', videoSrc: '/img/Everything_Everywhere_All_At_Once_Official_Trailer_HD_A_wxN1T1uxQ2g.mp4' },
+    { textColor: ' rgba(0, 0, 0, 1)', linkColor: '#E1D4C0', logoColor: '#E1D4C0', textBackground: 'white', bgColor: 'black', videoSrc: '/img/Mandarines.mp4' },
+    { textColor: ' rgba(0, 0, 0, 1)', linkColor: '#E1D4C0', logoColor: '#E1D4C0', textBackground: 'white', bgColor: 'black', videoSrc: '/img/Muhammed.mp4' },
+    { textColor: ' rgba(0, 0, 0, 1)', linkColor: '#E1D4C0', logoColor: '#E1D4C0', textBackground: 'white', bgColor: 'black', videoSrc: '/img/Oldboy.mp4' },
+    { textColor: ' rgba(0, 0, 0, 1)', linkColor: '#E1D4C0', logoColor: '#E1D4C0', textBackground: 'white', bgColor: 'black', videoSrc: '/img/Sputnik.mp4' },
+    { textColor: ' rgba(0, 0, 0, 1)', linkColor: '#E1D4C0', logoColor: '#E1D4C0', textBackground: 'white', bgColor: 'black', videoSrc: '/img/Capernaum.mp4' },
 ];
 
 // Function to change theme
@@ -40,23 +40,23 @@ function changeTheme() {
             videoElement.style.height= 'auto';
             break;
         case 3:
-            videoElement.style.width= '90%';
+            videoElement.style.width= '70%';
             videoElement.style.height= 'auto';
         break;
         case 4:
-            videoElement.style.width= '80%';
+            videoElement.style.width= '60%';
             videoElement.style.height= 'auto';
         break;
         case 5:
-            videoElement.style.width= '85%';
+            videoElement.style.width= '70%';
             videoElement.style.height= 'auto';
         break;
         case 6:
-            videoElement.style.width= '90%';
+            videoElement.style.width= '80%';
             videoElement.style.height= 'auto';
         break;
         case 7:
-            videoElement.style.width= '90%';
+            videoElement.style.width= '80%';
             videoElement.style.height= 'auto';
         break;
         default:

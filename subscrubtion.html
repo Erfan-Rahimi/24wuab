@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+<header class="primary-header flex">
+    <div class="logo">
+        <i>Theaters</i>
+    </div>
+
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation " aria-expanded="false" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </button>
+
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Log in</a></li>
+            </ul>
+        </nav>
+</header> 
+
+
+<div class="card_wrapper">
+    <div class="card">
+        <div class="card-content card1">
+            <div class="card-overlay">
+                <h3>Free</h3>
+                <h2>0$</h2>
+                <ul>
+                    <li><p>Read certain Reviews</p></li>
+                    <li><p>Read older news</p></li>
+                    <li><p>See new movies</p></li>
+                </ul>
+            </div>
+        </div>
+        <button type="button">Buy</button>
+    </div>
+    <div class="card">
+        <div class="card-content card2">
+            <div class="card-overlay">
+                <h3>Premium</h3>
+                <h2>10$</h2>
+                <ul>
+                    <li><p>Read all Reviews</p></li>
+                    <li><p>Read updated news</p></li>
+                    <li><p>Chat under Reviews</p></li>
+                    <li><p>Join groups</p></li>
+                    <li><p>See new movies</p></li>
+                </ul>
+            </div>
+        </div>
+        <button type="button">Buy</button>
+    </div>
+    <div class="card">
+        <div class="card-content card3">
+            <div class="card-overlay">
+                <h3>Deluxe</h3>
+                <h2>20$</h2>
+                <ul>
+                    <li><p>Everything listed in Premium</p></li>
+                    <li><p>Write your own Reviews</p></li>
+                    <li><p>See new movies</p></li>
+                </ul>
+            </div>
+        </div>
+        <button type="button">Buy</button>
+    </div>
+</div>
+    
+</body>
+<script src="/js/main.js"></script>
+</html>
