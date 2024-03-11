@@ -8,6 +8,100 @@
     <title>Document</title>
 </head>
 <body>
+    <header class="primary-header flex">
+        <div class="logo">
+            <i>Theaters</i>
+        </div>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation " aria-expanded="false" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+
+            <nav>
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Log in</a></li>
+                </ul>
+            </nav>
+    </header>
     
+    <div class="card-wrapper">
+    <div id="filter-bar">
+        <input type="text" id="title-search" placeholder="Search by Title...">
+        <div class="release-date">
+        <input type="date" id="start-release-date" class="release-date-box">
+        <span></span>
+        <input type="date" id="end-release-date" class="release-date-box">
+        </div>
+        <div class="rating-review">
+        <div class="dropdown">
+            <div class="select">
+                <span class="selected">0</span>
+                <div class="caret"></div>
+            </div>
+            <ul class="menu">
+                <li class="active">0</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </div>
+        <span></span>
+        <div class="dropdown">
+            <div class="select">
+                <span class="selected">0</span>
+                <div class="caret"></div>
+            </div>
+            <ul class="menu">
+                <li class="active">0</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </div>
+    </div>
+    <div class="genre-reviewer">
+        <div class="dropdown">
+            <div class="select">
+                <span class="selected">Horror</span>
+                <div class="caret"></div>
+            </div>
+            <ul class="menu">
+                <li class="active">Horror</li>
+                <li>Animation</li>
+                <li>Historical</li>
+                <li>Thriller</li>
+                <li>Action</li>
+                <li>Romance</li>
+            </ul>
+        </div>
+        <span></span>
+        <div class="dropdown">
+            <div class="select">
+                <span class="selected">Erfan Rahimi</span>
+                <div class="caret"></div>
+            </div>
+            <ul class="menu">
+                <li class="active">Erfan Rahimi</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="cards">
+    <div class="card1 movie-card"></div>
+</div>
+
+
 </body>
+<script src="/js/main.js"></script>
 </html>
