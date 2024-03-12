@@ -83,12 +83,12 @@ body{
     transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
     z-index: 1; /* Ensure the text is above the video */
     background-color: rgba(48, 77, 46, 1); /* Set the background color with transparency */
-    color: #fff; 
     padding: 20px; 
     width: 100%;
     font-size: 5vw; 
     text-align: center; 
     mix-blend-mode:multiply;
+    background-color: black;
 }
 
 .text_box h1{
@@ -629,21 +629,26 @@ Button
 
 @media (max-width: 40em) {
     .card-wrapper{
-        min-height: 100vh;
+        height: calc(100vh - 20vh);
+        overflow-y: auto;
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40vh auto 100px;
+        grid-template-areas:
+        'filter'
+        'cards'
+        'footer';
     }
     
     #filter-bar{
+        grid-area: filter;
         display: flex;
         margin-top: 20px;
         align-items: center;
         justify-content: center;
-        min-height: 20vh;
         flex-direction: column;
+        height: 100%;
     }
 
     .dropdown{
@@ -681,25 +686,32 @@ Button
     }
 
     #title-search{
-        width: 80%;
+        width: 14rem;
         height: 20px;
         border-radius: 0.5rem ;
     }
 
     /*Cards*/
     .cards{
-        min-height: 100vh;
+        grid-area: cards;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
     .movie-card{
-        display: grid;
         background-color: white;
-        width: 300px;
-        height: 250px;
+        width: 150px;
+        height: 200px;
         border-radius: 10px;
-        border: none;
         color: #fff;
-        border-radius: 10px 10px 0px 0px;
+    }
+
+    footer{
+        grid-area: footer;
+        width: 100%;
     }
 }
 
