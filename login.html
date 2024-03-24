@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <title>Document</title>
 </head>
 <body>
@@ -14,50 +23,94 @@
         <i>Theaters</i>
     </div>
 
-    <button class="mobile-nav-toggle" aria-controls="primary-navigation " aria-expanded="false" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+    <button aria-label="Open navigation" class="mobile-nav-toggle" aria-controls="primary-navigation " aria-expanded="false" onclick="myFunction(this)">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
     </button>
 
         <nav>
             <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Log in</a></li>
+                <li><a aria-label="Home" href="/index.html">Home</a></li>
+                <li><a aria-label="Contact" href="/subscrubtion.html">Subscribe</a></li>
+                <li><a aria-label="Reviews" href="/card.html">Reviews</a></li>
+                <li><a aria-label="login" href="/login.html">Log in</a></li>
             </ul>
         </nav>
 </header> 
 
 <div class="container">
-    <div class="login_display">
+    <section class="login_display">
+        <h2>Log in page</h2>
         <div class="login_view">
             <div class="login">
                 <span class="login-text sign_text">Log in</span>
-                <input type="text" name="name" class="input-field" placeholder="Email" autocomplete="off" required>
-                <label for="name" class="email-label">Email</label>
 
-                <input type="text" name="name" class="input-field" placeholder="Email" autocomplete="off" required>
-                <label for="name" class="password-label">Password</label>
+                <div class="email">
+                <input type="text" id="email" name="name" class="input-field" placeholder="Email" autocomplete="off">
+                <label for="email" class="input-label">Email</label>
+                </div>
 
-                <button type="button" class="login_button">Log in</button>
+                <div class="password">
+                <input type="text" id="password" name="name" class="input-field" placeholder="Password" autocomplete="off">
+                <label for="password" class="input-label">Password</label>
+                </div>
 
-                <button type="button" class="forgot_button">
+                <button type="button" class="login_button button">Log in</button>
+
+                <button type="button" class="forgot_button button">
                     <span class="button_text">Forgot password?</span>
                 </button>
             </div>
             <div class="sign_in">
                 <span class="login-text sign_text">Dont have an Subscruption?</span>
 
-                <button type="button" class="subscribe_button">Subscribe</button>
-                <button type="button" class="forgot_button">
+                <button type="button" class="subscribe_button button">Subscribe</button>
+                <button type="button" class="forgot_button button">
                     <span class="button_text">Continue as guest</span>
                 </button>
             </div>
         </div>
-    </div>
+    </section>
 </div>
+<footer>
+    <div class="footer_col">
+        <h4>products</h4>
+        <ul>
+            <li><a aria-label="Teams" href="#">teams</a></li>
+            <li><a aria-label="advertisements" href="#">advertisements</a></li>
+            <li><a aria-label="Talent" href="#">talent</a></li>
+        </ul>
+    </div>
+    <div class="footer_col">
+        <h4>Company</h4>
+        <ul>
+            <li><a aria-label="Work" href="#">Work</a></li>
+            <li><a aria-label="About" href="#">About</a></li>
+            <li><a aria-label="Legal" href="#">Legal</a></li>
+            <li><a aria-label="Contact us" href="#">Contact us</a></li>
+        </ul>
+    </div>
+    <div class="footer_col">
+        <h4>network</h4>
+        <ul>
+            <li><a aria-label="Raters" href="#">Raters</a></li>
+            <li><a aria-label="License" href="#">License</a></li>
+            <li><a aria-label="Buisiness" href="#">Buisiness</a></li>
+            <li><a aria-label="Events" href="#">Events</a></li>
+            <li><a aria-label="API" href="#">API</a></li>
+        </ul>
+    </div>
+    <div class="footer_col">
+        <img src="/img/Ponyo2.png" alt=""  width="250" height="auto">
+        <div class="links">
+            <a aria-label="Linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a aria-label="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a aria-label="Twitter" href="#"><i class="fab fa-twitter"></i></a>
+            <a aria-label="Instagram" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
     
 </body>
 <script src="/js/main.js"></script>

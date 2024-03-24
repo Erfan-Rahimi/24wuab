@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header class="primary-header flex">
         <div class="logo">
-            <i>Theaters</i>
         </div>
 
-        <button class="mobile-nav-toggle" aria-controls="primary-navigation " aria-expanded="false" onclick="myFunction(this)">
+        <button aria-label="open navigation" class="mobile-nav-toggle" aria-controls="primary-navigation " aria-expanded="false" onclick="myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -21,22 +27,30 @@
 
             <nav>
                 <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Reviews</a></li>
-                    <li><a href="#">Log in</a></li>
+                    <li><a aria-label="Home" href="/index.html">Home</a></li>
+                    <li><a aria-label="Contact" href="/subscrubtion.html">Subscribe</a></li>
+                    <li><a aria-label="Reviews" href="/card.html">Reviews</a></li>
+                    <li><a aria-label="login" href="/login.html">Log in</a></li>
                 </ul>
             </nav>
     </header>
     
     <div class="cardwrapper">
-    <div id="filterbar">
-        <input type="text" id="title-search" placeholder="Search by Title...">
-        <div class="release-date">
-        <input type="date" id="start-release-date" class="release-date-box">
-        <span></span>
-        <input type="date" id="end-release-date" class="release-date-box">
+    <section id="filterbar">
+        <h2>Filter Options</h2>
+        <div class="search_and_date">
+            <label class="filter_label" for="title-search">Search by Title:</label>
+            <input type="text" id="title-search" placeholder="Search by Title...">
+            <label class="filter_label" for="release-date">Start Release Date:</label>
+                <div class="release-date">
+                    <input aria-label="start-release-date" type="date" id="start-release-date" class="release-date-box">
+                    <span>to</span>
+                    <label class="filter_label" for="end-release-date"></label>
+                    <input aria-label="end-release-date" type="date" id="end-release-date" class="release-date-box">
+                </div>
         </div>
+        <div class="rating_and_genre">
+        <label class="filter_label" for="rating-review">Rating:</label>
         <div class="rating-review">
         <div class="dropdown">
             <div class="select">
@@ -52,7 +66,8 @@
                 <li>5</li>
             </ul>
         </div>
-        <span></span>
+        <!-- <h4>to</h4> -->
+        <span>to</span>
         <div class="dropdown">
             <div class="select">
                 <span class="selected">0</span>
@@ -68,6 +83,7 @@
             </ul>
         </div>
     </div>
+    <label class="filter_label" for="genre-reviewer">Genre and Reviewer:</label>
     <div class="genre-reviewer">
         <div class="dropdown">
             <div class="select">
@@ -83,6 +99,7 @@
                 <li>Romance</li>
             </ul>
         </div>
+        <!-- <h4>to</h4> -->
         <span></span>
         <div class="dropdown">
             <div class="select">
@@ -95,7 +112,9 @@
         </div>
     </div>
     </div>
-    <div class="cards">
+    </section>
+    <section class="cards2">
+        <h2>Movie Cards</h2>
         <div class="movie-card"></div>
         <div class="movie-card"></div>
         <div class="movie-card"></div>
@@ -108,8 +127,59 @@
         <div class="movie-card"></div>
         <div class="movie-card"></div>
         <div class="movie-card"></div>
+        <div class="movie-card"></div>
+        <div class="movie-card"></div>
+        <div class="movie-card"></div>
+        <div class="movie-card"></div>
+        <div class="movie-card"></div>
+        <div class="movie-card"></div>
+        <div class="movie-card"></div>
+        <div class="movie-card"></div>
+        <div class="movie-card"></div>
+        <div class="movie-card"></div>
+        <div class="movie-card"></div>
+        <div class="movie-card"></div>
+    </section>
+    <footer>
+        <div class="footer_col">
+            <h4>products</h4>
+            <ul>
+                <li><a aria-label="Teams" href="#">teams</a></li>
+                <li><a aria-label="advertisements" href="#">advertisements</a></li>
+                <li><a aria-label="Talent" href="#">talent</a></li>
+            </ul>
+        </div>
+        <div class="footer_col">
+            <h4>Company</h4>
+            <ul>
+                <li><a aria-label="Work" href="#">Work</a></li>
+                <li><a aria-label="About" href="#">About</a></li>
+                <li><a aria-label="Legal" href="#">Legal</a></li>
+                <li><a aria-label="Contact us" href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="footer_col">
+            <h4>network</h4>
+            <ul>
+                <li><a aria-label="Raters" href="#">Raters</a></li>
+                <li><a aria-label="License" href="#">License</a></li>
+                <li><a aria-label="Buisiness" href="#">Buisiness</a></li>
+                <li><a aria-label="Events" href="#">Events</a></li>
+                <li><a aria-label="API" href="#">API</a></li>
+            </ul>
+        </div>
+        <div class="footer_col">
+            <img src="/img/Ponyo2.png" alt="Follow us"  width="250" height="auto">
+            <div class="links">
+                <a aria-label="Linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a aria-label="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a aria-label="Twitter" href="#"><i class="fab fa-twitter"></i></a>
+                <a aria-label="Instagram" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
     </div>
-    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </body>
 <script src="/js/main.js"></script>
 </html>
